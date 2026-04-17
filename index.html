@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陳進益 Jin Yi Chen | Senior Backend Engineer Resume</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-light: #f4f7f6;
+            --text-dark: #333;
+            --text-gray: #666;
+            --white: #ffffff;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', 'Microsoft JhengHei', sans-serif; background: var(--bg-light); color: var(--text-dark); line-height: 1.6; }
+        .container { max-width: 1000px; margin: 20px auto; background: var(--white); box-shadow: 0 0 20px rgba(0,0,0,0.1); display: flex; flex-wrap: wrap; }
+
+        /* Left Sidebar */
+        aside { flex: 1; min-width: 300px; background: var(--primary-color); color: var(--white); padding: 40px 30px; }
+        .profile-img { width: 180px; height: 180px; background: #ddd; border-radius: 50%; margin: 0 auto 20px; border: 5px solid rgba(255,255,255,0.1); overflow: hidden; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #666; text-align: center; }
+        .profile-img img { width: 100%; height: 100%; object-fit: cover; }
+        h1 { font-size: 28px; text-align: center; margin-bottom: 5px; }
+        .title { text-align: center; font-weight: 300; color: var(--accent-color); margin-bottom: 30px; letter-spacing: 1px; }
+        
+        .contact-info { margin-bottom: 30px; }
+        .contact-item { display: flex; align-items: center; margin-bottom: 12px; font-size: 0.9em; }
+        .contact-item i { width: 25px; color: var(--accent-color); }
+        .contact-item a { color: var(--white); text-decoration: none; }
+
+        .sidebar-section { margin-bottom: 35px; }
+        .sidebar-section h2 { font-size: 18px; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 8px; margin-bottom: 15px; text-transform: uppercase; }
+        .skill-tag { display: inline-block; background: rgba(255,255,255,0.1); padding: 4px 10px; border-radius: 4px; font-size: 13px; margin: 3px; border: 1px solid rgba(255,255,255,0.2); }
+
+        /* Main Content */
+        main { flex: 2; min-width: 600px; padding: 40px 50px; background: var(--white); }
+        section { margin-bottom: 40px; }
+        .section-title { font-size: 22px; color: var(--primary-color); border-left: 5px solid var(--accent-color); padding-left: 15px; margin-bottom: 25px; }
+        
+        .exp-item { margin-bottom: 30px; position: relative; }
+        .exp-header { display: flex; justify-content: space-between; align-items: baseline; font-weight: bold; }
+        .company { font-size: 18px; color: var(--primary-color); }
+        .duration { font-size: 14px; color: var(--text-gray); }
+        .job-title { color: var(--accent-color); font-weight: 600; margin-bottom: 10px; }
+        
+        .project-list { margin-top: 10px; }
+        .project-card { background: #f9f9f9; padding: 15px; border-radius: 6px; margin-bottom: 15px; border-left: 3px solid #ddd; }
+        .project-card strong { color: var(--primary-color); }
+        .tech-stack { font-size: 12px; color: #e67e22; margin-top: 5px; font-family: monospace; }
+        
+        ul { list-style-type: square; padding-left: 20px; font-size: 14px; color: var(--text-gray); }
+        li { margin-bottom: 5px; }
+
+        @media (max-width: 768px) {
+            .container { flex-direction: column; }
+            aside, main { min-width: 100%; }
+        }
+        
+        @media print {
+            body { background: white; }
+            .container { box-shadow: none; margin: 0; max-width: 100%; }
+            .skill-tag { border: 1px solid #ccc; color: black; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <aside>
+        <div class="profile-img">
+            <img src="https://via.placeholder.com/180" alt="Jin Yi Chen">
+            <span>Photo Area</span>
+        </div>
+        <h1>陳進益 (Jin Yi)</h1>
+        <p class="title">Senior Backend Engineer</p>
+
+        <div class="contact-info">
+            <div class="contact-item"><i class="fas fa-calendar"></i> 1989 / 01 / 28</div>
+            <div class="contact-item"><i class="fas fa-graduation-cap"></i> 淡江大學 化學工程學系</div>
+            <div class="contact-item"><i class="fab fa-github"></i> <a href="https://github.com/LeonChen128" target="_blank">LeonChen128</a></div>
+            <div class="contact-item"><i class="fas fa-code"></i> <a href="https://leetcode.com/Leon888" target="_blank">Leetcode (Leon888)</a></div>
+            <div class="contact-item"><i class="fas fa-globe"></i> <a href="http://leon.jscenglish.com" target="_blank">Side Project Portfolio</a></div>
+        </div>
+
+        <div class="sidebar-section">
+            <h2>Backend Skills</h2>
+            <div class="skill-tag">PHP / Laravel / Lumen</div>
+            <div class="skill-tag">MySQL / MSSQL / MongoDB</div>
+            <div class="skill-tag">RESTful API</div>
+            <div class="skill-tag">Unit Testing</div>
+            <div class="skill-tag">Queue / Schedule</div>
+        </div>
+
+        <div class="sidebar-section">
+            <h2>Frontend Skills</h2>
+            <div class="skill-tag">Vue.js (Vue2)</div>
+            <div class="skill-tag">JavaScript / jQuery</div>
+            <div class="skill-tag">SCSS / Bootstrap</div>
+            <div class="skill-tag">Web Socket</div>
+        </div>
+
+        <div class="sidebar-section">
+            <h2>Infrastructure</h2>
+            <div class="skill-tag">Docker / Nginx</div>
+            <div class="skill-tag">AWS / GCP / Azure</div>
+            <div class="skill-tag">GitHub Actions (CI/CD)</div>
+            <div class="skill-tag">Git / Git Flow</div>
+        </div>
+
+        <div class="sidebar-section">
+            <h2>Languages</h2>
+            <p style="font-size: 14px;">中文 (精通) / 閩南語 (精通)<br>英文 (讀寫中等, 聽說初級)</p>
+        </div>
+    </aside>
+
+    <main>
+        <section>
+            <h2 class="section-title">專業概覽 (Appraisals)</h2>
+            <ul>
+                <li><strong>4 年+ Web 全端開發經驗：</strong> 深耕電商 (3年) 與 Fintech (1年) 領域，具備從 0 到 1 獨立開發能力。</li>
+                <li><strong>高併發與效能優化：</strong> 專長於資料庫效能調優、索引優化（複合索引）、避免 N+1 查詢與多層次 Cache 設計。</li>
+                <li><strong>資料一致性保障：</strong> 熟練運用 DB Transaction、Lock 機制、原子性操作 (Increment/Decrement) 確保高頻交易準確。</li>
+                <li><strong>程式碼品質：</strong> 遵循 PSR 規範、模組化設計降低耦合，擅長使用流程圖與 Notion 撰寫開發文件。</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-title">工作經歷</h2>
+            
+            <div class="exp-item">
+                <div class="exp-header">
+                    <span class="company">桓竑智聯 (Fintech / 客製化視訊)</span>
+                    <span class="duration">2023/02 ~ Present</span>
+                </div>
+                <div class="job-title">軟體工程師</div>
+                <ul>
+                    <li>開發銀行業高客製化視訊案件管理系統與 SAAS 監控系統。</li>
+                    <li>協助地端 Server 部署、維護，並串接 Tappay 第三方金流與 FCM 推播。</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <span class="company">愛上新鮮 (台灣指標性生鮮電商)</span>
+                    <span class="duration">2020/11 ~ 2023/02</span>
+                </div>
+                <div class="job-title">軟體工程師</div>
+                <div class="project-list">
+                    <div class="project-card">
+                        <strong>庫存與儲位中心 (核心系統)</strong>
+                        <p>管理 5 座大型倉庫與近 700 貨架。實作實庫/虛庫邏輯、先進先出、PDA 掃描入庫、訂單揀貨導航。透過 Transaction 與 Lock 機制嚴格控管高頻庫存異動，防止超賣。</p>
+                        <div class="tech-stack">Lumen, MySQL, Docker, Web Socket, Redis</div>
+                    </div>
+                    <div class="project-card">
+                        <strong>會員中心與大數據中心</strong>
+                        <p>設計 JWT 認證 SDK 與各系統權限認證；利用 MongoDB 紀錄多平台與外部廠商海量數據，實現定期備份。 </p>
+                        <div class="tech-stack">Lumen, MongoDB, JWT</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <span class="company">典匠資訊 (圖庫影音電商)</span>
+                    <span class="duration">2020/01 ~ 2020/11</span>
+                </div>
+                <div class="job-title">軟體工程師</div>
+                <ul>
+                    <li>重構電商網站前端為 RWD 架構，並串接國外圖庫 API 實現多語系匯入。</li>
+                    <li>使用 ImageMagick 處理海量圖檔多尺寸自動切割與浮水印壓制。</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">教育背景</h2>
+            <div class="exp-header">
+                <span class="company">淡江大學 (Tamkang University)</span>
+                <span class="duration">2007/09 ~ 2012/01</span>
+            </div>
+            <p style="font-size: 15px; color: var(--text-gray);">化學工程學系 學士 (B.S. in Chemical Engineering)</p>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>
